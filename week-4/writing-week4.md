@@ -130,6 +130,7 @@ Dengan menggunakan bootstrap kita lebih mudah dan cepat dalam mendevelop web pro
 
 contoh :
 **Komponen Card**
+
 ![file](card.png)
 
 ```
