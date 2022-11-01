@@ -71,9 +71,11 @@ JSX adalah extension syntax JavaScript yang memungkinkan Anda untuk memodifikasi
 - Props digunakan agar komponen memiliki data yang dinamis yang dikirim dari komponen lain
 
 **contoh props**
+
 ![props](props.png)
 
 **contoh state**
+
 ![state](state.png)
 
 ### LifeCycle Method
@@ -90,7 +92,9 @@ Setiap React Component akan melewati 3 fase :
   Fase saat komponen dihapus dari DOM
 
 List Data
+
 ![data](listData.png)
+
 Untuk step pertama kita membuat useState yang nantinya digunakan untuk menampung datanya ke dalam variabel **digimons**, kemudian untuk **setDigimons** berfungsi untuk merubah data. Untuk useEffect nya mengambil data dari API, kemudian di set ke dalam variabel **digimons**, jika data nya sudah berhasil diload semua, maka akan muncul semua datanya.
 
 ### Styling React
