@@ -7,14 +7,9 @@
   Array adalah tipe data list order yang dapat menyimpan tipe data apapun di dalamnya, Array biasanya dideklarasikan dengan bentuk `[]`. Array dapat menyimpan tipe data String, Number, Boolean, dan lainnya.
   **Contoh Array**
 
-  ```
-  let buah = [
-      'anggur',
-      'melon',
-      'semangka',
-      'rambutan'
-  ]
-  console.log(buah)
+  ```javascript
+  let buah = ["anggur", "melon", "semangka", "rambutan"];
+  console.log(buah);
   ```
 
   **Cara Akses Array**
@@ -23,23 +18,23 @@
   Kita dapat memanipulasi/mengubah suatu array, seperti menghapus data array, menambahkan data array, dan lainnya.
   contoh :
 
-  ```
-  let minuman = ['kopi', 'teh']
+  ```javascript
+  let minuman = ["kopi", "teh"];
 
   // ubah nilai pada index ke-0
-  minuman[0] = 'jus jambu'
+  minuman[0] = "jus jambu";
 
-  console.log(minuman)
+  console.log(minuman);
   ```
 
   **Array Properties**
   Array memiliki 5 properti yang sering digunakan yaitu constructor, length, index, input, dan prototype. Properties adalah fitur yang sudah disediakan oleh Javascript untuk memudahkan developer. Ada banyak properties yang sudah tersedia pada javascript. contohnya `length`
 
-  ```
-  let minuman = ['kopi', 'teh']
+  ```javascript
+  let minuman = ["kopi", "teh"];
 
   // cek panjang array
-  console.log(minuman)
+  console.log(minuman);
   ```
 
   **Array Method**
@@ -63,23 +58,23 @@
   - **ForEach**
     method untuk melakukan looping pada setiap elemen array.
     contoh :
-    ```
-    let motor = ['yamaha', 'suzuki']
+    ```javascript
+    let motor = ["yamaha", "suzuki"];
     motor.forEach((res) => {
-        console.log(res)
-    })
+      console.log(res);
+    });
     ```
   - **Map**  
     melakukan perulangan/looping dengan membuat array baru.
     contoh :
 
-    ```
-    let motor = ['yamaha', 'suzuki']
+    ```javascript
+    let motor = ["yamaha", "suzuki"];
 
-    let duplicate = motor.map(res => {
-        return res
-    })
-    console.log(res)
+    let duplicate = motor.map((res) => {
+      return res;
+    });
+    console.log(res);
     ```
 
     Kita bisa lihat bahwa **.map()** dan **forEach()** sama-sama melakukan looping dan mengembalikan nilai baru dari operasi yang dilakukan, Perbedaannya adalah `.forEach` tidak dapat membuat Array baru dari hasil operasi yang ada dalam looping Lalu dari segi performance juga sangat jauh.
@@ -90,15 +85,15 @@
   Mutidimensional Array yaitu `terdapat array didalam array`  
   contoh :
 
-  ```
+  ```javascript
   let cloth = [
-    ['hoodie', 10],
-    ['crewneck', 20],
-    ['jacket', 15],
-  ]
+    ["hoodie", 10],
+    ["crewneck", 20],
+    ["jacket", 15],
+  ];
 
   // Cara Akses
-  console.log(cloth[1][0])
+  console.log(cloth[1][0]);
   // output : crewneck
   ```
 
@@ -111,7 +106,7 @@
     Properti adalah data lengkap dari sebuah object. Method adalah action dari sebuah object. Apa saja yang dapat dilakukan dari suatu object. Object sama seperti tipe data yang lain, kita bisa assign value pada object ke dalam suatu variabel.
     contoh :
 
-    ```
+    ```javascript
     let mahasiswa = {
         nama : 'Aditya Widyatmoko'
         nim : 12739
@@ -134,84 +129,84 @@
     Kita dapat melakukan update pada variabel dengan tipe data Object.
     contoh :
 
-    ```
+    ```javascript
     let mahasiswa = {
-        nama : 'Aditya Widyatmoko',
-        nim : 12739,
-        jurusan : 'Teknik Informatika'
-    }
+      nama: "Aditya Widyatmoko",
+      nim: 12739,
+      jurusan: "Teknik Informatika",
+    };
     // ubah nim
-    mahasiswa.nim = 127419
+    mahasiswa.nim = 127419;
 
     // ubah jurusan
-    mahasiswa.jurusan = 'DKV'
+    mahasiswa.jurusan = "DKV";
 
-    console.log(mahasiswa)
+    console.log(mahasiswa);
     ```
 
     Selain itu kita juga bisa menghapus suatu data pada sebuah object menggunakan delete operator, misal kita ingin hapus data `nim` pada object `mahasiswa`, maka gunakan `delete mahasiswa.nim`
 
   - **Method**
     Jika value yang kita masukkan pada property berupa function. Maka itu disebut method. Di dalam object kita bisa memberikan suatu function
-    ```
+    ```javascript
     const greeting = {
-        welcome : () => {
-            return 'helo world'
-        }
-    }
-    console.log(greeting.welcome)
+      welcome: () => {
+        return "helo world";
+      },
+    };
+    console.log(greeting.welcome);
     ```
   - **Nested Object**
     Terdapat Objek di dalam objek.
     contoh :
-    ```
+    ```javascript
     let buku = {
-        judul: 'Helo Dunia',
-        desc: 'this is description',
-        author: {
-           people:{
-            nama: 'Aditya',
-            umur: 20,
-            city: 'Magelang'
-           }
-        }
-    }
+      judul: "Helo Dunia",
+      desc: "this is description",
+      author: {
+        people: {
+          nama: "Aditya",
+          umur: 20,
+          city: "Magelang",
+        },
+      },
+    };
     ```
   - **Looping Object**
     Jika kita ingin menampilkan seluruh object properti. Kita bisa menggunakan looping. Jadi tidak perlu mengakses secara manual memanggil setiap propertinya.
-    ```
-    for(let key in object){
-        // code
+    ```javascript
+    for (let key in object) {
+      // code
     }
     ```
   - **Array of Object**
     Object sama seperti Array yang bisa menyimpan banyak data. Kita dapat menggunakan array of object untuk data yang lebih dari satu.
     contoh :
-    ```
+    ```javascript
     let siswa = [
-        {
-            nama: 'Aditya',
-            umur: 20,
-            kota: 'Magelang'
-        },
-        {
-            nama: 'Dewa',
-            umur: 16,
-            kota: 'Magelang'
-        },
-    ]
+      {
+        nama: "Aditya",
+        umur: 20,
+        kota: "Magelang",
+      },
+      {
+        nama: "Dewa",
+        umur: 16,
+        kota: "Magelang",
+      },
+    ];
     ```
 
 - ### Rekursif
 
   Recursive adalah function yang memanggil dirinya sendiri sampai kondisi tertentu. Recursive kebanyakan digunakan untuk case matematika, fisika, kimia, dan yang berhubungan dengan calculation. Recursive biasanya memiliki base case dimana akan selalu terjadi perulangan jika base case belum terpenuhi.
 
-  ```
-  function rekursif(){
-    if(condition){
-        // base case
-    } else{
-        // recursive
+  ```javascript
+  function rekursif() {
+    if (condition) {
+      // base case
+    } else {
+      // recursive
     }
   }
   ```
@@ -223,15 +218,15 @@
 
   **Contoh kasus rekursif**
 
-  ```
+  ```javascript
   // Hitung Faktorial
 
-  function rekursif(x){
-      if(x==1){
-          return 1
-      }else {
-          return x * rekursif(x-1)
-      }
+  function rekursif(x) {
+    if (x == 1) {
+      return 1;
+    } else {
+      return x * rekursif(x - 1);
+    }
   }
   ```
 
@@ -240,17 +235,16 @@
   Web storage adalah salah satu Web API yang dapat menyimpan data secara lokal pada sisi client. Berbeda dengan objek atau array, data yang disimpan pada objek atau array JavaScript bersifat sementara, dan akan hilang jika terjadi reload atau pergantian URL pada browser. Sedangkan data yang disimpan pada Web Storage akan bertahan lebih lama karena data akan disimpan pada storage browser.
   Untuk menyimpan dan mengakses data pada storage, metode yang digunakan adalah key-value. Di sini key menjadi sebuah kunci untuk mengakses data pada storage.
 
-  ```
+  ```javascript
   // create data
-  let key = 'Item 1';
-  localStorage.setItem(key, 'Value');
+  let key = "Item 1";
+  localStorage.setItem(key, "Value");
 
   // get data
   let myItem = localStorage.getItem(key);
 
   // delete data
   localStorage.removeItem(key);
-
   ```
 
 - ### Asynchronous
@@ -262,18 +256,18 @@
   - **Callback**
     Callback adalah function yang menjadi argument untuk function lain dan akan dieksekusi pada poin tertentu, bisa jadi saat ini atau nanti.
 
-  ```
+  ```javascript
   const notify = () => {
-  console.log('Download complete!');
+    console.log("Download complete!");
   };
 
   const download = (url, callback) => {
-  console.log(`Downloading from ${url}....`);
+    console.log(`Downloading from ${url}....`);
 
-  callback();
+    callback();
   };
 
-  const url = 'https://brachio.site/download';
+  const url = "https://brachio.site/download";
   download(url, notify);
   ```
 
@@ -285,46 +279,46 @@
     - fulfilled, operasi selesai dan berhasil
     - rejected, operasi selesai namun gagal
 
-    ```
+    ```javascript
     let progress = 100;
 
-        const download = new Promise((resolve, reject) => {
-        if (progress === 100) {
-            resolve('Download complete');
-        } else {
-            reject('Download failed');
-        }
-        });
+    const download = new Promise((resolve, reject) => {
+      if (progress === 100) {
+        resolve("Download complete");
+      } else {
+        reject("Download failed");
+      }
+    });
 
-        download
-        .then((result) => {
-            console.log(result); // Download complete
-        })
-        .catch((error) => {
-            console.log(error); // Download failed atau tidak ditampilkan jika tidak ada error
-        });
+    download
+      .then((result) => {
+        console.log(result); // Download complete
+      })
+      .catch((error) => {
+        console.log(error); // Download failed atau tidak ditampilkan jika tidak ada error
+      });
     ```
 
   - **Async Await**
     untuk menghandle operasi asynchronous dengan syntax yang lebih mirip dengan synchronous.
 
-    ```
-        const getStatus = (url) => {
-        console.log(`Downloading from ${url}...`);
+    ```javascript
+    const getStatus = (url) => {
+      console.log(`Downloading from ${url}...`);
 
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-            resolve('Download Complete');
-            }, 3000);
-        });
-        };
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("Download Complete");
+        }, 3000);
+      });
+    };
 
-        async function download(url) {
-        let status = await getStatus(url); // tunggu sampai promise selesai
-        console.log(status);
-        }
+    async function download(url) {
+      let status = await getStatus(url); // tunggu sampai promise selesai
+      console.log(status);
+    }
 
-        const url = 'https://brachio.site/download';
+    const url = "https://brachio.site/download";
 
-        download(url);
+    download(url);
     ```

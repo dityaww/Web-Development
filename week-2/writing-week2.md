@@ -31,28 +31,28 @@
 
   - **Operator Aritmatika**
     Operator aritmatika merupakan operator untuk melakukan operasi aritmatika seperti penjumlahan, pengurangan, pembagian, perkalian, dsb.
-    ```
-    let a = 10
-    let b = 20
-    let result = a + b
-    console.log(result)
+    ```javascript
+    let a = 10;
+    let b = 20;
+    let result = a + b;
+    console.log(result);
     ```
   - **Operator Perbandingan**
     Operator yang digunakan untuk membandingkan dua nilai. operator ini akan menghasilkan nilai boolean `true` atau `false`
-    ```
-    let a = 20
-    let b = 20
-    let result = a == b
+    ```javascript
+    let a = 20;
+    let b = 20;
+    let result = a == b;
     // true
     ```
   - **Operator Assignment**
     Operator yang digunakan untuk memberikan tugas kepada variabel. Biasanya digunakan untuk mengisi variabel. misal nya memberikan tanda `=` untuk memberikan value pada varibel yang sudah dideklarasikan.
-    ```
-    let a = 'Hello guys'
+    ```javascript
+    let a = "Hello guys";
     ```
   - **Operator Logika**
     Operator logika digunakan untuk melakukan operasi terhadap dua nilai `boolean`
-    ```
+    ```javascript
     AND (&&)
     OR (||)
     NEGATION (!)
@@ -62,7 +62,7 @@
   - **Operator Ternary**
     Operator ternary biasanya digunakan untuk membuat conditional dengan cara yang lebih ringkas dan efisien
     Untuk bentuknya seperti ini :
-    ```
+    ```javascript
     <kodisi> ? "benar" : "salah"
     ```
 
@@ -74,12 +74,12 @@
 
   - **If Else Statement**
 
-    ```
-    let a = 12
-    if(a == 12){
-        console.log("ini angka 12")
-    } else{
-        console.log("ini bukan angka 12")
+    ```javascript
+    let a = 12;
+    if (a == 12) {
+      console.log("ini angka 12");
+    } else {
+      console.log("ini bukan angka 12");
     }
     ```
 
@@ -88,14 +88,14 @@
 
   - **Switch Case**
     Switch Case digunakan apabila kondisi dan percabangan nya terlalu banyak
-    ```
-    let x = 0
+    ```javascript
+    let x = 0;
     switch (x) {
-        case 0:
-            console.log("Ini angka 0");
-            break;
-        default:
-            console.log("Bukan angka 0");
+      case 0:
+        console.log("Ini angka 0");
+        break;
+      default:
+        console.log("Bukan angka 0");
     }
     ```
 
@@ -108,25 +108,25 @@
     - **Global Scope**
       Global scope berarti variabel yang kita buat dapat diakses dimanapun dalam suatu file. Agar menjadi Global Scope, suatu variabel harus dideklarasikan diluar Blocks. Blocks adalah code yang berada didalam curly braces `{}`
 
-      ```
-      let name = "Aditya"
-      function Myname(){
-          return name
+      ```javascript
+      let name = "Aditya";
+      function Myname() {
+        return name;
       }
 
-      console.log(name)
+      console.log(name);
       ```
 
     - **Local Scope**
       Local scope berarti kita mendeklarasikan variabel didalam blocks seperti function, conditional, dan looping. Maka variabel hanya bisa diakses didalam blocks saja.
 
-      ```
-      function Myname(){
-          let name = "Aditya"
-          return name
+      ```javascript
+      function Myname() {
+        let name = "Aditya";
+        return name;
       }
 
-      console.log(name)
+      console.log(name);
       // error
       ```
 
@@ -134,40 +134,40 @@
 
       Function adalah sebuah blok kode dalam sebuah grup untuk menyelesaikan 1 task/1 fitur. Function memiliki kelebihan yaitu dapat digunakan berulang kali.
 
-      ```
+      ```javascript
       // deklarasi fungsi
-      function sayHello(){
-          console.log("Hello World")
+      function sayHello() {
+        console.log("Hello World");
       }
 
       // cara panggil
-      sayHello()
+      sayHello();
       ```
 
       **Parameter Function**
       Dengan parameter, function dapat menerima sebuah inputan data dan menggunakannya untuk melakukan task/tugas. Misal kita membuat function dengan 2 parameter, maka kita harus memberikan 2 nilai pada function tersebut.
 
-      ```
-      function jumlahkan(a, b){
-          return a + b
+      ```javascript
+      function jumlahkan(a, b) {
+        return a + b;
       }
 
       // panggil function
-      console.log(jumlahkan(5, 10))
+      console.log(jumlahkan(5, 10));
       ```
 
       **Penulisan function**
 
-      ```
+      ```javascript
       // function biasa
-      function jumlah(a, b){
-          return a + b
+      function jumlah(a, b) {
+        return a + b;
       }
 
       // arrow function
       let jumlah = (a, b) => {
-          return a + b
-      }
+        return a + b;
+      };
       ```
 
 - ### DOM (Document Object Model)
@@ -198,19 +198,19 @@
   **Membuat Elemen HTML**
   Dengan menggunakan DOM kita juga dapat membuat elemen pada HTML
 
-  ```
+  ```javascript
   // skrip HTML
-  <div id='header'></div>
+  <div id="header"></div>
   ```
 
-  ```
+  ```javascript
   // skrip js
-  let header = document.GetElementById('header')
+  let header = document.GetElementById("header");
 
-  const headertitle = document.createElement('h1')
-  headertitle.textContent = "Ini Heading 1"
+  const headertitle = document.createElement("h1");
+  headertitle.textContent = "Ini Heading 1";
 
-  header.append(headertitle)
+  header.append(headertitle);
   ```
 
   **DOM Event Listener**
@@ -219,7 +219,7 @@
   - click
     Event untuk memberikan interaksi kepada user dengan klik suatu elemen
 
-    ```
+    ```javascript
     let btn = document.getElementById('mybtn')
 
     btn.addEventListener(“click”, function() {
@@ -230,7 +230,7 @@
   - blur
     Event di mana sebuah element kehilangan fokus dari user (misal user klk mouse di luar element tersebut atau user klik tab untuk berpindah element
 
-    ```
+    ```javascript
     const input = document.getElementById(“username”)
 
     input.addEventListener(“blur”, () => {
@@ -241,7 +241,7 @@
   - form submission
     Event yang digunakan pada suatu form untuk mengambil data inputan atau untuk memberikan form validation
 
-    ```
+    ```javascript
     const form = document.getElementById(“form”)
 
     form.addEventListener(“submit”, function(event) {

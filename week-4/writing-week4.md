@@ -71,9 +71,9 @@ contoh :
 CSS unit adalah satuan untuk menentukan ukuran dari suatu elemen atau kontennya. Misal, jika ingin menentukan `font-size` dari sebuah paragraf, kita bisa memberikan nilai tertentu. Nilai ini akan diikuti oleh satuan (CSS unit).
 contoh :
 
-```
+```css
 p {
-    font-size : 20px;
+  font-size: 20px;
 }
 ```
 
@@ -98,9 +98,9 @@ Media query juga disebut dengan Breakpoint, karena cara kerja media query yakni 
 
 untuk memberikan breakpoint nya kita bisa menggunakan `min-width` maupun `max-width`, disesuaikan saja sesuai dengan kebutuhannya
 
-```
+```css
 @media only screen and (max-width: 600px) {
-  .about{
+  .about {
     font-size: 20px;
     background-color: blue;
   }
@@ -133,7 +133,7 @@ contoh :
 
 ![file](card.png)
 
-```
+```css
 <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">

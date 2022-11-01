@@ -91,10 +91,10 @@
 
 - #### Struktur HTML
 
-  ```
+  ```html
   <html>
     <head>
-      <title> // judul </title>
+      <title>// judul</title>
     </head>
     <body>
       // isi konten html
@@ -114,52 +114,51 @@
 
   - ##### Single Tag
     Tag yang tidak memiliki penutup tag
-    ```
+    ```html
     <img src="" />
     ```
   - ##### Double Tag
     Tag yang memiliki penutup tag
-    ```
-    <h1> This is heading 1 </h1>
+    ```html
+    <h1>This is heading 1</h1>
     ```
 
   ##### Contoh Tag HTML
 
   - ##### Membuat tulisan tebal dan miring
 
-    ```
-    <b>tulisan tebal</b>
-    <i>tulisan miring</i>
+    ```html
+    <b>tulisan tebal</b> <i>tulisan miring</i>
     ```
 
   - ##### Heading
 
-    ```
+    ```html
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     ```
 
   - ##### Membuat artikel/paragraf
 
-    ```
+    ```html
     <p>paragraff</p>
     ```
 
   - ##### Untuk menghubungkan ke file css
 
-    ```
-    <link rel="stylesheet" src=""/>
+    ```html
+    <link rel="stylesheet" src="" />
     ```
 
   - ##### Membuat sebuah tombol
 
-    ```
+    ```html
     <button>ini tombol</button>
     ```
 
   - ##### Untuk menampilkan gambar
 
-    ```
+    ```html
     <img src="" alt="" />
     ```
 
@@ -194,7 +193,7 @@
     ```
   - ##### Internal CSS
     kode css yang disisipkan dengan menggunakan tag `<style>` didalam tag `<head>`
-    ```
+    ```html
     <!DOCTYPE html>
     <html>
       <head>
@@ -218,7 +217,7 @@
 
     file html dengan css dibuat terpisah, untuk menghubungkan file css ke dalam html bisa dengan memberikan tag `<link>` pada bagian `<head>`
 
-    ```
+    ```html
     <!-- index.html -->
     <!DOCTYPE html>
     <html>
@@ -232,9 +231,8 @@
     </html>
     ```
 
-    ```
-    <!-- style.css -->
-    * {
+    ```css
+    <!-- style.css -- > * {
       margin: 0;
       padding: 0;
     }
@@ -247,23 +245,20 @@
 
   Syntax yang digunakan untuk menunjuk/menyeleksi elemen html yang akan diberi style. CSS Syntax dibagi menjadi 3 bagian, yaitu **selector**, **property**, dan **value**. Untuk selector ada 3, yaitu :
 
-  ```
-  <!-- selector by tag -->
-  h1 {
+  ```css
+  <!-- selector by tag -- > h1 {
   }
 
-  <!-- selector by class -->
-  .title{
+  <!-- selector by class -- > .title {
   }
 
-  <!-- selector by id -->
-  #title{
+  <!-- selector by id -- > #title {
   }
   ```
 
   Contoh Syntax CSS :
 
-  ```
+  ```css
   p {
     color: green;
   }
@@ -277,7 +272,7 @@
 
 - #### CSS Responsive
   **Responsive Web** adalah tampilan website yang bisa menyesuaikan dengan device pengguna. Untuk membuat sebuah web menjadi responsive kita harus mengatur ukuran layar pada tiap device. setelah itu kita menentukan layout sesuai dengan ukuran layarnya. Kita dapat mengatur responsive dengan menggunakan **Media Query**
-  ```
+  ```css
   @media screen and (min-width: 800px) {
     .container {
       margin: 1em 2em;
@@ -289,43 +284,41 @@
   Flexbox merupakan mode layout yang ada di CSS3 dan digunakan untuk mengatur elemen di suatu halaman web.
   **Contoh implementasi flexbox :**
 
-  ```
+  ```html
   <!-- kode html -->
   <!DOCTYPE html>
   <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
-      <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <main>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <main>
         <div class="kotak">
-            <h1>Kotak 1</h1>
+          <h1>Kotak 1</h1>
         </div>
         <div class="kotak">
-            <h1>Kotak 2</h1>
+          <h1>Kotak 2</h1>
         </div>
         <div class="kotak">
-            <h1>Kotak 3</h1>
+          <h1>Kotak 3</h1>
         </div>
         <div class="kotak">
-            <h1>Kotak 4</h1>
+          <h1>Kotak 4</h1>
         </div>
-    </main>
-  </body>
+      </main>
+    </body>
   </html>
   ```
 
-  ```
-  <!-- kode css -->
-
-  * {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  ```css
+  <!-- kode css -- > * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   main {
@@ -403,15 +396,15 @@
 
   - **Source Code**
 
-    ```
+    ```javascript
     function ceknomor(x) {
-      if(x % 2 == 0){
-        console.log(x, 'merupakan bilangan genap')
-      } else{
-        console.log(x, 'merupakan bilangan ganjil')
+      if (x % 2 == 0) {
+        console.log(x, "merupakan bilangan genap");
+      } else {
+        console.log(x, "merupakan bilangan ganjil");
       }
     }
-    ceknomor(prompt('masukkan angka'))
+    ceknomor(prompt("masukkan angka"));
     ```
 
   - **Result**
